@@ -13,3 +13,5 @@ a new change for bug branch，修复了main分支中的bug（由issue分支合�
 同样的bug，要在dev上修复，我们只需要把4c805e2 fix bug 101这个提交所做的修改“复制”到dev分支。注意：我们只想复制4c805e2 fix bug 101这个提交所做的修改，并不是把整个master分支merge过来。
 为了方便操作，Git专门提供了一个cherry-pick命令，让我们能复制一个特定的提交到当前分支：
 记住之前issue的标识，从main回到dev后直接cherry-pick这个标识，那么dev本身就是直接会更新版本，并且-m的操作描述也是和issue一致的，然后再stash pop，
+
+似乎新的issue分支没有某个文件，merge并不影响main中有这个文件，merge只是对具有文件的文件进行修改？（合并）
