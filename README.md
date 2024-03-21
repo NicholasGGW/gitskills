@@ -15,4 +15,4 @@ a new change for bug branch，修复了main分支中的bug（由issue分支合�
 记住之前issue的标识，从main回到dev后直接cherry-pick这个标识，那么dev本身就是直接会更新版本，并且-m的操作描述也是和issue一致的，然后再stash pop，
 
 似乎新的issue分支没有某个文件，merge并不影响main中有这个文件，merge只是对具有文件的文件进行修改？（合并）
-不是
+好像是的
